@@ -1,0 +1,76 @@
+<!-- Edit this file to change the layout of the detail view print preview page -->
+
+
+<div class="panel-heading"><h3 class="panel-title">
+	<strong><%%DETAIL_VIEW_TITLE%%></strong>
+	<div class="hidden-print pull-right">
+		<button type="button" id="print" onclick="window.print();" title="<%%TRANSLATION(Print)%%>" class="btn btn-success"><i class="glyphicon glyphicon-print"></i></button>
+		<button type="submit" id="back" title="<%%TRANSLATION(Back)%%>" class="btn btn-warning"><i class="glyphicon glyphicon-remove"></i></button>
+	</div>
+	<div class="clearfix"></div>
+</h3></div>
+
+<div class="panel-body">
+	<fieldset class="form-horizontal">
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">ID</label>
+			<div class="col-xs-9">
+				<p class="form-control-static"><%%VALUE(id)%%></p>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Tenant</label>
+			<div class="col-xs-9">
+				<p class="form-control-static"><span id="tenant<%%RND1%%>"><%%COMBOTEXT(tenant)%%></span></p>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Address</label>
+			<div class="col-xs-9">
+				<p class="form-control-static"><%%VALUE(address)%%></p>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Landlord/manager name</label>
+			<div class="col-xs-9">
+				<p class="form-control-static"><%%VALUE(landlord_or_manager_name)%%></p>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Landlord/manager phone</label>
+			<div class="col-xs-9">
+				<p class="form-control-static"><%%VALUE(landlord_or_manager_phone)%%></p>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Monthly rent</label>
+			<div class="col-xs-9">
+				<p class="form-control-static"><%%VALUE(monthly_rent)%%></p>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Duration of residency from</label>
+			<div class="col-xs-9">
+				<p class="form-control-static"><%%COMBOTEXT(duration_of_residency_from)%%></p>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">to</label>
+			<div class="col-xs-9">
+				<p class="form-control-static"><%%COMBOTEXT(to)%%></p>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Reason for leaving</label>
+			<div class="col-xs-9">
+				<p class="form-control-static"><%%VALUE(reason_for_leaving)%%></p>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Notes</label>
+			<div class="col-xs-9">
+				<p class="form-control-static"><%%VALUE(notes)%%></p>
+			</div>
+		</div>
+	</fieldset>
+</div>
